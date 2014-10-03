@@ -167,5 +167,16 @@ BOARD_BATTERY_DEVICE_NAME := battery
 # Releasetools
 #TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
 
+# MultiROM config. MultiROM also uses parts of TWRP config
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := $(LOCAL_PATH)/multirom/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
+MR_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5410
+MR_KEXEC_MEM_MIN := #To be added#
+MR_USE_MROM_FSTAB := true
+MR_DEVICE_HOOKS := $(LOCAL_PATH)/multirom/mr_hooks.c
+MR_DEVICE_HOOKS_VER := #To be added#
+
 # inherit from the proprietary version
 -include vendor/samsung/i9500/BoardConfigVendor.mk
