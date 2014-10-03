@@ -1,15 +1,14 @@
+# Inherit from device configuration
 $(call inherit-product, device/samsung/i9500/full_i9500.mk)
 
-# Inherit some common CM stuff
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit some common Omni stuff
+$(call inherit-product, vendor/omni/config/common.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Inherit the APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-PRODUCT_NAME := cm_i9500
+# Set those variables here to overwrite the inherited values.
+PRODUCT_NAME := omni_i9500
 PRODUCT_DEVICE := i9500
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
