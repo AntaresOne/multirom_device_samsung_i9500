@@ -126,8 +126,8 @@ TW_CRYPTO_MNT_POINT := "/data"
 TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,noauto_da_alloc,journal_async_commit,errors=panic  wait,check,encryptable=footer"
 TW_CRYPTO_FS_FLAGS := "0x00000406"
 TW_CRYPTO_KEY_LOC := "footer"
-TW_BRIGHTNESS_PATH := 
-TARGET_USE_CUSTOM_LUN_FILE_PATH :=
+#TW_BRIGHTNESS_PATH := 
+#TARGET_USE_CUSTOM_LUN_FILE_PATH :=
 TWRP_EVENT_LOGGING := true
 
 # Webkit
