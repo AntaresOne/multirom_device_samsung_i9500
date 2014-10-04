@@ -20,5 +20,9 @@ const char *mr_init_devices[] =
 	"/sys/devices/platform/dw_mmc.0*",
 	"/sys/module/mmcblk",
 	"/sys/module/mmc_core",
+	
+	// MicroSD card
+	"/sys/block/mmcblk1",
+	"/sys/devices/platform/dw_mmc.2*",
 NULL
 };
