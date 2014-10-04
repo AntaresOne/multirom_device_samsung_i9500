@@ -30,5 +30,8 @@ const char *mr_init_devices[] =
 	// Input stuff
 	"/sys/devices/platform/s3c2440-i2c.0/i2c-0/0-0020/input/input1*", // Touchscreen
 	"/sys/devices/platform/gpio-keys.0/input/input14*", // Power key & Volume rocker
+	
+	// USB-OTG
+	"sys/devices/platform/s5p-ehci*",
 NULL
 };
