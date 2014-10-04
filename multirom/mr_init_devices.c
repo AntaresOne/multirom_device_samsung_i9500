@@ -12,5 +12,13 @@ const char *mr_init_devices[] =
 	"/sys/class/misc/android_adb",
 	"/sys/class/tty/ptmx",
 	
+	// EMMC stuff
+	"/sys/block/mmcblk0",
+	"/sys/bus/mmc",
+	"/sys/bus/mmc/drivers/mmcblk",
+	"/sys/bus/sdio/drivers/bcmsdh_sdmmc",
+	"/sys/devices/platform/dw_mmc.0*",
+	"/sys/module/mmcblk",
+	"/sys/module/mmc_core",
 NULL
 };
