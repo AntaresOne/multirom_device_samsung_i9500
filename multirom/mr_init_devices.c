@@ -1,5 +1,3 @@
-// Currently useless. Under development.
-
 #include <stdlib.h>
 // These are paths to folders in /sys which contain "uevent" file
 // need to init this device.
@@ -8,5 +6,11 @@
 // You can use * at the end to init this folder and all its subfolders
 const char *mr_init_devices[] =
 {
-	 NULL
+	// ADB stuff
+	"/sys/bus/usb",
+	"/sys/class/android_usb/android0/f_adb",
+	"/sys/class/misc/android_adb",
+	"/sys/class/tty/ptmx",
+	
+NULL
 };
