@@ -176,7 +176,7 @@ MR_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5410
 MR_KEXEC_MEM_MIN := #To be added#
 MR_USE_MROM_FSTAB := true
 MR_DEVICE_HOOKS := $(LOCAL_PATH)/multirom/mr_hooks.c
-MR_DEVICE_HOOKS_VER := #To be added#
+MR_DEVICE_HOOKS_VER := 1
 
 # inherit from the proprietary version
 -include vendor/samsung/i9500/BoardConfigVendor.mk
