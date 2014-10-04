@@ -6,6 +6,8 @@
 // You can use * at the end to init this folder and all its subfolders
 const char *mr_init_devices[] =
 {
+	"/sys/class/graphics/fb0", // Framebuffer
+	
 	// ADB stuff
 	"/sys/bus/usb",
 	"/sys/class/android_usb/android0/f_adb",
