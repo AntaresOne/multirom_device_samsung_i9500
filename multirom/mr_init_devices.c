@@ -24,5 +24,9 @@ const char *mr_init_devices[] =
 	// MicroSD card
 	"/sys/block/mmcblk1",
 	"/sys/devices/platform/dw_mmc.2*",
+	
+	// Input stuff
+	"/sys/devices/platform/s3c2440-i2c.0/i2c-0/0-0020/input/input1*", // Touchscreen
+	"/sys/devices/platform/gpio-keys.0/input/input14*", // Power key & Volume rocker
 NULL
 };
